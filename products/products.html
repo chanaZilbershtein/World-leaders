@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>מעמידים עולם-מוצרי גמ"ח</title>
+    <link rel="icon" href="../img/איקון לוגו.png">
+    <link rel="stylesheet" href="../forAllPages/style.css">
+    <!-- <link rel="stylesheet" href="./products.css"> -->
+    <link rel="stylesheet" href="./products.css">
+</head>
+
+<body>
+    <!-- הידר -->
+    <header>
+        <nav>
+            <img src="../img/לוגו סופי.png" alt="" width="15%" id="logo">
+            <a href="../home/home.html">בית</a>
+            <a href="../specificCategory/specificCategory.html" onclick="saveTosessionStorage('רפואה')"
+                class="navC">רפואה</a>
+            <a href="../specificCategory/specificCategory.html" onclick="saveTosessionStorage('אביזרי תינוקות')"
+                class="navC">אביזרי תינוקות</a>
+            <a href="../specificCategory/specificCategory.html" onclick="saveTosessionStorage('ציוד לשמחות')"
+                class="navC">ציוד לשמחות</a>
+            <a href="../specificCategory/specificCategory.html" onclick="saveTosessionStorage('ריהוט')"
+                class="navC">ריהוט</a>
+            <a href="../specificCategory/specificCategory.html" onclick="saveTosessionStorage('שבת')"
+                class="navC">שבת</a>
+            <a href="../hghe"></a>
+            <a href="../hghe"></a>
+        </nav>
+    </header>
+    <!-- סקשין -->
+    <section>
+        <!-- js-להכנסת כותרת מעמוד -->
+        <div id="titleNameOfGmach"></div>
+        <!-- כפתור לחפש -->
+        <input type="text" name="" id="valueSearch" placeholder="הכנס שם מוצר">
+        <button type="submit" id="search">סנן</button>
+        <!-- כפתור לשחזור -->
+        <button type="reset" id="btnReset">שחזר</button>
+        <!-- להכנסת כל המוצרים -->
+        <div id="products"></div>
+        <!-- למתי שאין תוצאות במלאי אחרי הסינון -->
+        <h1 style="display: none;" class="noResults">אין פרטים התואמים לחיפוש שלך :(</h1>
+
+        <!-- הרקע המכהה -->
+        <div class="popupBackground"></div>
+
+        <!-- הפופאפ עצמו -->
+        <div id="popupSpecificProduct"></div>
+    </section>
+    <!-- פוטר -->
+    <footer>
+        <div>
+            <a href="../home/home.html">בית</a><br>
+            <a href="../specificCategory/specificCategory.html" onclick="saveTosessionStorage('רפואה')">רפואה</a><br>
+            <a href="../specificCategory/specificCategory.html" onclick="saveTosessionStorage('אביזרי תינוקות')">אביזרי
+                תינוקות</a><br>
+        </div>
+        <div>
+            <a href="../specificCategory/specificCategory.html" onclick="saveTosessionStorage('ציוד לשמחות')">ציוד
+                לשמחות</a><br>
+            <a href="../specificCategory/specificCategory.html" onclick="saveTosessionStorage('ריהוט')">ריהוט</a><br>
+            <a href="../specificCategory/specificCategory.html" onclick="saveTosessionStorage('שבת')">שבת</a><br>
+        </div>
+        <div>
+            <a href="../addGmach/addGmach.html">הוספת גמ"ח משלך</a><br>
+            <a href="../category/category.html">מציאת גמ"ח</a><br>
+            <a href="../siteRegulatoins/siteRegulations.html" target="_blank">תקנון</a><br>
+        </div>
+    </footer>
+    <!-- קישורים לjs -->
+    <script src="../forAllPages/jquery-3.2.1.js"></script>
+    <script src="../forAllPages/app.js"></script>
+    <script src="./products.js"></script>
+    <script src="../forAllPages/app.js"></script>
+</body>
+
+</html>

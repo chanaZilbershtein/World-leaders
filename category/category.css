@@ -1,0 +1,308 @@
+/* שורה ראשונה */
+
+/* הגדרות כלליות להכל */
+
+/* לכיתובים הקטנים */
+/* להורדה שלהם ועיצוב */
+span {
+    display: grid;
+    text-align: center;
+    margin-top: 100%;
+    color: #000000;
+    font-size: 18px;
+}
+
+/* לכותרת */
+h2 {
+    display: inline-block;
+    margin-top: 11%;
+    /* למירכוז הכותרת באופן אחוזי-כללי */
+    width: 100%;
+    text-align: center;
+
+}
+
+/* לסידור השורה הראשונה */
+
+#oneLine {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin-top: 2%;
+}
+
+/* לריבוע הרפואה */
+#backGroundMedicine {
+    display: inline-block;
+    margin-top: 0.5%;
+    width: 250px;
+    height: 250px;
+    background-size: cover;
+    background-position: center;
+    /* הפעלת האנימציה */
+    animation: picture1 10s infinite;
+}
+
+/* אינימציה של החלפת תמונות לרפואה */
+@keyframes picture1 {
+    0% {
+        background-image: url("../img/גמחים/רפואה/מכשור רפואי/מכשיר רפואי חדשים.jpg");
+    }
+
+    50% {
+        background-image: url("../img/גמחים/רפואה/תרופות/ריבוע אקמול תינוקות.jpg");
+    }
+
+    70% {
+        background-image: url("../img/גמחים/רפואה/תרופות/תרופות פסיכיאטירות ריבוע.jpg");
+    }
+
+    100% {
+        background-image: url("../img/גמחים/רפואה/תרופות/ריבוע משחה.png");
+    }
+}
+
+/* לריבוע התינוקות */
+#backGroundBaby {
+    /* margin-right: 10%; */
+    display: inline-block;
+    margin-top: 0.5%;
+    width: 250px;
+    height: 250px;
+    background-size: cover;
+    background-position: center;
+    /* הפעלת האנימציה */
+    animation: picture2 10s infinite;
+}
+
+/* אינימציה של החלפת תמונות לציוד תינוקות */
+@keyframes picture2 {
+    0% {
+        background-image: url("../img/גמחים/ציוד לתינוק/עגלות ועריסות/עגלת שכיבה.png");
+    }
+
+    30% {
+        background-image: url("../img/גמחים/ציוד לתינוק/מוצצים ובקבוקים/הרבה מוצצים.jpg");
+    }
+
+    50% {
+        background-image: url("../img/גמחים/ציוד לתינוק/מוצצים ובקבוקים/חדשים מוצצים ובקבוקים.jpg");
+    }
+
+    100% {
+        background-image: url("../img/גמחים/ציוד לתינוק/עגלות ועריסות/לול פשוט.jpg");
+    }
+}
+
+/* לריבוע השמחות */
+#backGroundHappy {
+    /* margin-right: 10%; */
+    display: inline-block;
+    margin-top: 0.5%;
+    width: 250px;
+    height: 250px;
+    background-size: cover;
+    background-position: center;
+    /* הפעלת האנימציה */
+    animation: picture3 10s infinite;
+}
+
+/* אינימציה של החלפת תמונות לשמחות */
+@keyframes picture3 {
+    0% {
+        background-image: url("../img/גמחים/שמחות/קישוטי שיער/קישוט שיער.jpg");
+    }
+
+    40% {
+        background-image: url("../img/גמחים/שמחות/מחיצות/מחיצות ריבוע.jpg");
+    }
+
+    60% {
+        background-image: url("../img/גמחים/שמחות/מפות/מפות שולחן.jpg");
+    }
+
+    100% {
+        background-image: url("../img/גמחים/שמחות/ברכונים/ברכון חדשים.jpg");
+    }
+}
+
+/* שורה שניה */
+
+/* לסידור השורה השניה */
+#twoLine {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin-top: 1%;
+    margin-bottom: 5%;
+}
+
+/* לריבוע הריהוט */
+#backGroundFurniture {
+    display: inline-block;
+    margin-top: 10%;
+    width: 250px;
+    height: 250px;
+    background-size: cover;
+    background-position: center;
+    /* הפעלת האנימציה */
+    animation: picture4 10s infinite;
+}
+
+/* אינימציה של החלפת תמונות לריהוט */
+@keyframes picture4 {
+    0% {
+        background-image: url("../img/גמחים/ריהוט/ספסל מתקפל.jpg");
+    }
+
+    40% {
+        background-image: url("../img/גמחים/ריהוט/הרבה כסאות פלסטיק.jpg");
+    }
+
+    60% {
+        background-image: url("../img/גמחים/ריהוט/מיטה מתקפלת 2.png");
+    }
+
+    100% {
+        background-image: url("../img/גמחים/ריהוט/כסא מתקפל.jpg");
+    }
+}
+
+/* לריבוע השבת */
+#backGroundSabbath {
+    display: inline-block;
+    margin-top: 10%;
+    width: 250px;
+    height: 250px;
+    background-size: cover;
+    background-position: center;
+    /* הפעלת האנימציה */
+    animation: picture5 10s infinite;
+}
+
+/* אינימציה של החלפת תמונות לשבת */
+@keyframes picture5 {
+    0% {
+        background-image: url("../img/גמחים/שבת/פלטות ומיחמים/מיחם.jpg");
+    }
+
+    25% {
+        background-image: url("../img/גמחים/שבת/פלטות ומיחמים/פלטה.png");
+    }
+
+    55% {
+        background-image: url("../img/גמחים/שבת/דירות לשבת/דירה לשבת.jpg");
+    }
+
+    100% {
+        background-image: url("../img/גמחים/שבת/שעוני שבת/שעון שבת.jpg");
+    }
+}
+
+/* לאנימצית הגדלה בעת שעובר על התמונות/הכיתוב */
+section>div>a {
+    transition: 2s transform;
+}
+
+section>div>a:hover {
+    transform: scale(1.09);
+}
+
+/* לרספונסיביות */
+
+/* גודל בינוני */
+@media(max-width: 991px) and (min-width: 768px){
+     /* רפואה */
+    #backGroundMedicine {
+        width: 200px;
+        height: 200px;
+    }
+     /* רפואה */
+     #backGroundMedicine {
+        width: 200px;
+        height: 200px;
+    }
+
+    /* אביזרי תינוקות  */
+    #backGroundBaby {
+        width: 200px;
+        height: 200px;
+    }
+
+    /* שמחות    */
+    #backGroundHappy {
+        width: 200px;
+        height: 200px;
+    }
+    /* לשורה השניה */
+    #twoLine {
+        margin-top: 0%;
+        margin-right: -12%;
+        margin-bottom: 10%;
+    }
+
+    /* ריהוט */
+    #backGroundFurniture {
+        width: 200px;
+        height: 200px;
+        margin-right: 15%;
+    }
+
+    /* שבת */
+    #backGroundSabbath {
+        width: 200px;
+        height: 200px;
+    }
+}
+
+/* גודל קטן */
+@media(max-width: 767px) {
+
+    html {
+        max-width: 100%;
+    }
+
+    h2 {
+        margin-top: 13%;
+    }
+
+    /* לכיתוב שמתחת לתמונות */
+    span {
+        font-size: 28px;
+    }
+
+    /* רפואה */
+    #backGroundMedicine {
+        margin-top: 2%;
+        width: 367px;
+        height: 367px;
+    }
+
+    /* אביזרי תינוקות  */
+    #backGroundBaby {
+        margin-top: 8%;
+        width: 367px;
+        height: 367px;
+    }
+
+    /* שמחות    */
+    #backGroundHappy {
+        margin-top: 8%;
+        width: 367px;
+        height: 367px;
+    }
+
+    /* ריהוט */
+    #backGroundFurniture {
+        margin-top: 8%;
+        width: 367px;
+        height: 367px;
+    }
+
+    /* שבת */
+    #backGroundSabbath {
+        margin-top: 8%;
+        width: 367px;
+        height: 367px;
+    }
+}

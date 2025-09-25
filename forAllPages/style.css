@@ -1,0 +1,64 @@
+/*באופן כללי לכל העמוד*/
+html {
+    /* height: 5000px; */
+    direction: rtl;
+    font-family: heebo;
+    /* text-align: center; */
+}
+
+/*ניווט*/
+nav {
+    position: fixed;
+    display: flex;
+    width: 100%;
+    padding-left: 100px;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: #fff1dc;
+    padding: 0.2%;
+    margin-right: -1%;
+    z-index: 999991;
+}
+
+nav>a {
+    text-decoration: none;
+    color: black;
+    transition: transform 0.3s ease;
+}
+
+/* לצבע מתי שעובר */
+nav>a:hover {
+    color: #536493;
+    transform: translateY(-5px);
+}
+
+/*פוטר*/
+footer {
+    background-color: #536493;
+    padding: 6%;
+    display: flex;
+    justify-content: space-evenly;
+    line-height: 3;
+
+}
+
+footer>div>a {
+    color: #fff1dc;
+    text-decoration: none;
+}
+
+/* כותרות ראשיות לאתר */
+.titleH2 {
+    color: #ef5a70;
+    text-shadow: 0 3px rgba(51, 50, 50, 0.4);
+    font-size: 30px;
+    text-align: center;
+    /* margin-top: 5.5%; */
+}
+
+/* רספונסיביות */
+@media(max-width: 600px) {
+    nav {
+        font-size: 12px;
+    }
+}

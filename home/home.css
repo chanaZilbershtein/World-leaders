@@ -1,0 +1,242 @@
+header {
+    background-color: #fff1dc;
+}
+
+#open>img {
+    padding-right: 63.5%;
+    padding-top: 5%;
+    /* display: inline-block; */
+}
+
+
+/* לצבע בניווט על העמוד הנוכחי */
+nav>a:nth-child(2) {
+    color: #536493;
+}
+
+#open>h1 {
+    color: #ef5a70;
+    text-shadow: 0 3px rgba(51, 50, 50, 0.4);
+    /* box-shadow: 0 0 2px 2px rgba(87, 87, 87, 0.4); */
+    float: right;
+    margin-top: -28%;
+    margin-right: 8%;
+    font-size: 60px;
+}
+
+#open>a {
+    text-decoration: none;
+    font-size: 22px;
+    float: right;
+    padding: 0.2%;
+    padding-right: 0.7%;
+    padding-left: 0.7%;
+    margin-top: -13%;
+    position: relative;
+    z-index: 99999;
+    box-shadow: 2px 2px 0 0 rgba(87, 87, 87, 0.4);
+
+}
+
+#open :nth-child(3) {
+    background-color: #ef5a70;
+    color: white;
+    border: solid #ef5a70, 2px;
+    margin-right: 8%;
+    transition: transform 0.3s ease;
+}
+
+#open :nth-child(3):hover {
+    box-shadow: 0 0 3px 2px rgba(87, 87, 87, 0.4);
+    transform: translateY(-5px);
+}
+
+#open :nth-child(4) {
+    background-color: #ffffff;
+    color: #ef5a70;
+    margin-right: 20%;
+    border: solid #ef5a70, 2px;
+    transition: transform 0.3s ease;
+}
+
+#open :nth-child(4):hover {
+    box-shadow: 0 0 3px 2px rgba(87, 87, 87, 0.4);
+    transform: translateY(-5px);
+}
+
+/* אודותינו */
+#about {
+    text-align: center;
+    margin-top: 4%;
+    line-height: 150%;
+}
+
+#newsImg {
+    display: flex;
+    /* flex-wrap: wrap; */
+    justify-content: space-evenly;
+    /* margin-bottom: 12%; */
+    width: 95%;
+    margin-right: 2.8%;
+}
+#newsImg>a{
+    width: 15%;
+}
+#newsImg>a>img {
+    width: 100%;
+    box-shadow: 0 0 2px 1px rgba(87, 87, 87, 0.4);
+}
+
+#newsImg>button {
+    background: none;
+    border: none;
+    font-size: 30px;
+    color: #ef5a70;
+    text-shadow: 0 2px rgba(51, 50, 50, 0.4);
+}
+
+/* פופולארים */
+#poplar {
+    margin-top: 10%;
+}
+
+#flexPoplar {
+    width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-evenly;
+    justify-content: space-evenly;
+    margin-right: 3%;
+}
+
+#flexPoplar>a {
+    width: 35.5%;
+    text-align: center;
+    text-decoration: none;
+    line-height: 0;
+    margin: 3%;
+}
+
+/*לסידור השורה שניה של התמונות*/
+#flexPoplar :nth-child(3) {
+    margin-right: -8%;
+}
+
+/*בשביל ישר עם הקו של סוף התמונות*/
+#flexPoplar :nth-child(4) {
+    margin-left: -22.2%;
+}
+
+.name_poplar {
+    color: #536493;
+}
+
+/*הוספת צל ואנימציה לתמונות*/
+#flexPoplar>a>div>img {
+    box-shadow: 0 0 2px 2px rgba(87, 87, 87, 0.4);
+    transition: 2s transform;
+
+}
+
+/*אנימציה*/
+#flexPoplar>a>div>img:hover {
+    transform: scale(1.09);
+}
+
+/*מספרים רצים*/
+#numbers {
+    margin-top: 5%;
+    display: flex;
+    flex-wrap: wrap;
+    /* justify-content: center; */
+    justify-content: space-evenly;
+    align-content: center;
+    background-color: #536493;
+    padding: 5%;
+}
+
+#numbers>div {
+    text-align: center;
+}
+
+#numbers>div>h4 {
+    margin-top: 0%;
+    font-size: 25px;
+    color: #fff1dc;
+}
+
+/* רספונסיביות */
+
+/* גודל בינוני */
+@media (max-width: 991px) and (min-width: 768px) {
+    #open>h1 {
+        font-size: 45px;
+    }
+
+    #open>a {
+        margin-top: -8%;
+    }
+
+    #open :nth-child(4) {
+        margin-right: 25%;
+    }
+
+    #about>p {
+        font-size: 20px;
+    }
+
+    #newsImg>a:nth-child(5) {
+        display: none;
+    }
+
+    #newsImg>a:nth-child(6) {
+        display: none;
+    }
+
+    #newsImg>a {
+        width: 20%;
+    }
+
+}
+/* גודל קטן */
+@media(max-width: 767px) {
+
+    html {
+        max-width: 100%;
+    }
+
+    #open>h1 {
+        font-size: 34px;
+        margin-top: -32%;
+    }
+
+    #open>a {
+        font-size: 15px;
+        margin-top: -10%;
+    }
+
+    #open :nth-child(4) {
+        margin-right: 30%;
+    }
+
+    /*החדשים */
+    #newsImg>a {
+        width: 40%;
+    }
+
+    #newsImg>a:nth-child(3) {
+        display: none;
+    }
+
+    #newsImg>a:nth-child(4) {
+        display: none;
+    }
+
+    #newsImg>a:nth-child(5) {
+        display: none;
+    }
+
+    #newsImg>a:nth-child(6) {
+        display: none;
+    }
+}

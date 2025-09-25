@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>מעמידים עולם-הוספת גמ"ח</title>
+    <link rel="icon" href="../img/איקון לוגו.png">
+    <link rel="stylesheet" href="../forAllPages/style.css">
+    <link rel="stylesheet" href="./addGmach.css">
+</head>
+
+<body>
+    <!-- הידר -->
+    <header id="header">
+        <nav>
+            <img src="../img/לוגו סופי.png" alt="" width="15%" id="logo">
+            <a href="../home/home.html">בית</a>
+            <a href="../specificCategory/specificCategory.html" onclick="saveTosessionStorage('רפואה')" class="navC">רפואה</a>
+            <a href="../specificCategory/specificCategory.html" onclick="saveTosessionStorage('אביזרי תינוקות')" class="navC">אביזרי
+                תינוקות</a>
+            <a href="../specificCategory/specificCategory.html" onclick="saveTosessionStorage('ציוד לשמחות')" class="navC">ציוד
+                לשמחות</a>
+            <a href="../specificCategory/specificCategory.html" onclick="saveTosessionStorage('ריהוט')" class="navC">ריהוט</a>
+            <a href="../specificCategory/specificCategory.html" onclick="saveTosessionStorage('שבת')" class="navC">שבת</a>
+            <a href="../hghe"></a>
+            <a href="../hghe"></a>
+        </nav>
+    </header>
+    <!-- סקשיין -->
+    <section>
+        <img src="../img/עולם.png" alt="" id="world">
+
+        <form action="#thanks">
+            <!-- שם הגמ"ח -->
+            <!-- <label for="nameOfGmach">שם הגמ"ח</label> -->
+            <input type="text" id="nameOfGmach" placeholder='שם הגמ"ח'><br>
+
+            <!-- שם -->
+            <!-- <label for="name">שם</label> -->
+            <input type="text" id="lastName" placeholder="שם משפחה"><br>
+
+            <!-- עיר -->
+            <!-- <label for="city">עיר</label> -->
+            <input type="text" id="city" placeholder="עיר"><br>
+
+            <!-- אזור מגורים -->
+            <!-- <label for="name">אזור</label> -->
+            <select name="area" id="area">
+                <option disabled >אזור</option>
+                <option value="צפון">צפון</option>
+                <option value="דרום">דרום</option>
+                <option value="מזרח">מזרח</option>
+                <option value="מערב">מערב</option>
+                <option value="מרכז">מרכז</option>
+            </select><br>
+
+            <!-- רחוב -->
+            <!-- <label for="street">רחוב</label> -->
+            <input type="text" id="street" placeholder="רחוב"><br>
+
+            <!-- מספר בית -->
+            <!-- <label for="houseNumber">מספר בית</label> -->
+            <input type="number" id="houseNumber" placeholder="מספר בית"><br>
+
+            <!-- טלפון -->
+            <!-- <label for="phone">טלפון</label> -->
+            <input type="text" id="phone" placeholder="טלפון"><br>
+
+            <!-- מייל -->
+            <!-- <label for="mail">מייל</label> -->
+            <input type="email" id="mail" placeholder="מייל"><br>
+
+            <!-- קטגוריה  -->
+            <!-- <label for="category">קטגוריה</label> -->
+            <select name="category" id="category">
+                <option disabled>קטגוריה</option>
+                <option value="רפואה">רפואה</option>
+                <option value="אביזרי תינוקות">אביזרי תינוקות</option>
+                <option value="ריהוט">ריהוט</option>
+                <option value="ציוד לשמחות">ציוד לשמחות</option>
+                <option value="שבת">שבת</option>
+            </select><br>
+
+            <!-- תת-קטגוריה -->
+            <!-- <label for="subCategory">תת-קטגוריה</label> -->
+            <input type="text" id="subCategory" placeholder="תת-קטגוריה"><br>
+
+            <!-- תמונה כוללנית לכל הגמ"ח -->
+            <label for="labelImage">בחר/גרור תמונה של מוצרי הגמ"ח:</label>
+            <input type="file" accept="image/*" id="inputImage" required>
+
+            <!-- כפתור להוספת מוצרים -->
+            <button type="button" id="up">העלאת מוצרים</button>
+            <button type="submit" id="end" disabled>סיום</button>
+        </form>
+        <!-- לרקע לפופאפ -->
+        <div id="thanksBackground" style="display: none;"></div>
+        <!-- לפופאפ בסוף הוספת הגמ"ח של תודה רבה-עם טיימר -->
+        <div id="thanks" style="display: none;">תודה על תרומתך למען הזולת!!!</div>
+    </section>
+    <!-- פוטר -->
+    <footer>
+        <div>
+            <a href="../home/home.html">בית</a><br>
+            <a href="../specificCategory/specificCategory.html" onclick="saveTosessionStorage('רפואה')">רפואה</a><br>
+            <a href="../specificCategory/specificCategory.html" onclick="saveTosessionStorage('אביזרי תינוקות')">אביזרי
+                תינוקות</a><br>
+        </div>
+        <div>
+            <a href="../specificCategory/specificCategory.html" onclick="saveTosessionStorage('ציוד לשמחות')">ציוד
+                לשמחות</a><br>
+            <a href="../specificCategory/specificCategory.html" onclick="saveTosessionStorage('ריהוט')">ריהוט</a><br>
+            <a href="../specificCategory/specificCategory.html" onclick="saveTosessionStorage('שבת')">שבת</a><br>
+        </div>
+        <div>
+            <a href="./addGmach.html">הוספת גמ"ח משלך</a><br>
+            <a href="../category/category.html">מציאת גמ"ח</a><br>
+            <a href="../siteRegulatoins/siteRegulations.html" target="_blank">תקנון</a><br>
+        </div>
+    </footer>
+    <script src="../jquery-3.2.1.js"></script>
+    <script src="./addGmach.js"></script>
+    <script src="../forAllPages/app.js"></script>
+</body>
+
+</html>
